@@ -20,5 +20,7 @@
     "rename": "ALTER TABLE table_name RENAME COLUMN column_name TO new_name;",
     "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
     "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
+    "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);",
+    "not_null": "ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;"
   }
 }
