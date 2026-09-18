@@ -12,7 +12,8 @@
   "row": {
     "insert": "INSERT INTO table_name(columns) VALUES(values);",
     "update": "UPDATE table_name SET column_name = new_value WHERE condition;",
-    "delete": "DELETE FROM table_name WHERE condition;"
+    "delete": "DELETE FROM table_name WHERE condition;",
+    "capitalize": "UPDATE table_name SET column_name = INITCAP(column_name);"
   },
   "column": {
     "add": "ALTER TABLE table_name ADD COLUMN column_name;",
@@ -21,6 +22,7 @@
     "primary_key": "ALTER TABLE table_name ADD PRIMARY KEY(column_name);",
     "foreign_key": "ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name);"
     "unique": "ALTER TABLE table_name ADD UNIQUE(column_name);",
-    "not_null": "ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;"
+    "not_null": "ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;",
+    "new_type": "ALTER TABLE table_name ALTER COLUMN column_name TYPE new_type";
   }
 }
